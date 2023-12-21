@@ -1,7 +1,6 @@
 # ANDROID MASTER INTERMEDIO
 
 <p align="center">
-<a href="https://youtu.be/UaR7GSNACsM"><img src="https://i.imgur.com/V48W0sU.jpg" style="height: 75%; width:75%;"/></center></a></p>
 
 En esta sección del curso, nos enfocaremos en enseñarte cómo escribir código de calidad para que puedas comenzar a buscar trabajo como desarrollador de Android. Encontrarás todo lo que necesitas para llevar tus habilidades de programación al siguiente nivel, desde conceptos avanzados de programación hasta las mejores prácticas de la industria.
 

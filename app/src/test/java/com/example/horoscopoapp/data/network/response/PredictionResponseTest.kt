@@ -1,9 +1,7 @@
 package com.example.horoscopoapp.data.network.response
 
-import com.example.horoscopoapp.motherobject.HoroscopeMotherObject
 import com.example.horoscopoapp.motherobject.HoroscopeMotherObject.anyResponse
 import io.kotlintest.shouldBe
-import org.junit.Assert.*
 import org.junit.Test
 
 class PredictionResponseTest {

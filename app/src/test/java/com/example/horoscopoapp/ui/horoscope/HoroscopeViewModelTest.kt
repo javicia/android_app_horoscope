@@ -1,6 +1,7 @@
 package com.example.horoscopoapp.ui.horoscope
 
 import com.example.horoscopoapp.data.providers.HoroscopeProvider
+import com.example.horoscopoapp.motherobject.HoroscopeMotherObject.horoscopeInfoList
 import io.mockk.MockKAnnotations
 import io.mockk.every
 import io.mockk.impl.annotations.MockK
@@ -21,7 +22,11 @@ class HoroscopeViewModelTest{
 
     @Test
     fun `when viewModel is created then horoscopes are loaded`(){
-        every { horoscopoProvider.getHoroscope() } returns listOf()
+        every { horoscopoProvider.getHoroscope() } returns horoscopeInfoList
         viewModel= HoroscopeViewModel(horoscopoProvider)
+
+        val horoscopes = viewModel.horoscope.value
+
+        assertTrue(horoscopes.isNotEmpty())
     }
 }

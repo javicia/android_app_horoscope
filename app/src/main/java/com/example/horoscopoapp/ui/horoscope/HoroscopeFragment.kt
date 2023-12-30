@@ -1,11 +1,9 @@
 package com.example.horoscopoapp.ui.horoscope
 
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Lifecycle
@@ -13,14 +11,11 @@ import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.horoscopoapp.databinding.FragmentHoroscopeBinding
-import com.example.horoscopoapp.domain.model.HoroscopeInfo
 import com.example.horoscopoapp.domain.model.HoroscopeInfo.*
 import com.example.horoscopoapp.domain.model.HoroscopeModel
 import com.example.horoscopoapp.ui.horoscope.adapter.HoroscopeAdapter
 import dagger.hilt.android.AndroidEntryPoint
-import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
 
 @AndroidEntryPoint
@@ -44,8 +39,8 @@ class HoroscopeFragment : Fragment() {
 
     private fun initRecyclerView() {
         horoscopeAdapter = HoroscopeAdapter(onItemSelected = {
-            val type = when(it){
-               Aquarius -> HoroscopeModel.Aquarius
+            val type = when (it) {
+                Aquarius -> HoroscopeModel.Aquarius
                 Aries -> HoroscopeModel.Aries
                 Cancer -> HoroscopeModel.Cancer
                 Capricorn -> HoroscopeModel.Capricorn
